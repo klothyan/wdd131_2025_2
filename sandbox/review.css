@@ -5,3 +5,24 @@ body {
 .brand > span {
     font-size: 4em;
 }
+
+.post-summary > image{
+    display: block;
+}
+
+header {
+    background-color: blue;
+}
+
+.brand {
+    color:white;
+    display: grid;
+    grid-template-columns: 60px auto;
+    max-width: 500px;
+}
+
+.brand > h1 {
+    margin-left: 0.5em;
+}
+
+
