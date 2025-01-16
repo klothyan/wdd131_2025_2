@@ -11,9 +11,7 @@ const newDiv = document.createElement('div');
 newDiv.innerHTML = '<ul><li>One</li><li>Two</li><li>Three</li></ul>';
 document.body.appendChild(newDiv);
 
-const newSection = document.createElement('section');
-newSection.innerHTML = ``
-<h2>${title}</h2>
-<h3>${subtitle}}</h3>
-<p>${Content}<p/>
-document.body.append(newSection);
+const ingredientsData = ["Pinto beans", "Korn", "Spices", "Tortillas"];
+const portionData = ["1 15oz can", "1 15oz can", "1Tbsp", "8"];
+
+
