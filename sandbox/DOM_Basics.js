@@ -20,6 +20,7 @@ function ingredientTemplate(index) {
 }
 
 const newList = document.createElement("ul");
+newList.classList.add("dark")
 ingredientsData.forEach(function (item, index) {
     newList.innerHTML += ingredientTemplate(index);
 })
