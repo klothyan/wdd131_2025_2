@@ -65,28 +65,41 @@ body {
     margin: 0 auto;
 }
 
-.dark {
-    background-color: #121212;
-    color: #ffffff;
+body {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-.footer-logo img {
-    width: 120px;
+
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+#logo {
+    transition: opacity 0.3s ease;
+}
+
+body.dark #logo {
+    opacity: 0;
+}
+
+.theme-selector {
+    margin: 20px;
+}
+
+#theme {
+    font-size: 16px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#logo {
+    width: 100px;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
-
-body .footer-logo img {
-    content: url('byui-logo_blue.webp');
-}
-
-body.dark .footer-logo img {
-    content: url('byui-logo_dark.webp');
-}
-
-
-
-
 
 
 
