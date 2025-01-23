@@ -1,9 +1,22 @@
 // events.js
 let tasks = [];
 
+function taskTemplate(task) {
+  return `<li ${task.completed ? 'class="strike"' : ""}>
+   <p>${task.detail}</p>
+   <div>
+     <span data-function="delete">❎</span>
+     <span data-function="complete">✅</span>
+   </div>
+ </li>`;
+}
+
 function renderTasks(tasks) {
+  const listElement = document.querySelector("#todolist");
   // get the list element from the DOM
   // loop through the tasks array. transform (map) each task object into the appropriate HTML to represent a to-do.
+  const tasksHtml = tasks.map(taskTemplate);
+  listElement.innerHTML = tasksHtml.join("");
 }
 
 function newTask() {
