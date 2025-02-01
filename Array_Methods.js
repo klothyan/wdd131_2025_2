@@ -5,24 +5,26 @@ const listTemplate = (step) => {
 const stepsHtml = steps.map(listTemplate);
 document.querySelector("#myList").innerHTML = stepsHtml.join("");
 
-const grades = ["A", "B", "C"];
+const grades = ["A", "B", "A"];
 
-function convertGrade(grade) {
-    let points = 0;
-    if (grade === "A") {
-        points = 4;
-    } else if (grade === "B") {
-        points = 3;
-    } else if (grade === "C") {
-        points = 2;
-    }
-    return points;
+function convertGradeToPoints(grade) {
+    if (grade === "A") return 4;
+    if (grade === "B") return 3;
+    return 0;
 }
 
-const gpaPoints = grades.map(convertGrade);
-
+const gpaPoints = grades.map(convertGradeToPoints);
 const pointsTotal = gpaPoints.reduce((total, item) => total + item, 0);
 const gpa = pointsTotal / gpaPoints.length;
 
 console.log("GPA:", gpa);
 
+const words = ["watermelon", "peach", "apple", "tomato", "grape"];
+const shortWords = words.filter((word) => word.length < 6);
+console.log("Short Words:", shortWords);
+
+const myArray = [12, 34, 21, 54];
+const luckyNumber = 21;
+let luckyIndex = myArray.indexOf(luckyNumber);
+
+console.log("Lucky Number Index:", luckyIndex);
