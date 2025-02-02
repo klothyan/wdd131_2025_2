@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +16,6 @@ h1 {
   font-size: 36px;
 }
 
-/* Navigation Styles */
 nav {
   background-color: #004d99;
   color: white;
@@ -48,7 +46,6 @@ nav ul li a:hover {
   background-color: #003366;
 }
 
-/* Main Content Layout */
 .main-container {
   display: flex;
   justify-content: center;
@@ -57,7 +54,6 @@ nav ul li a:hover {
   gap: 20px;
 }
 
-/* Book Image + Title + Description */
 .book-section {
   display: flex;
   flex-direction: column;
@@ -85,7 +81,6 @@ nav ul li a:hover {
   line-height: 1.5;
 }
 
-/* Book Info Section (Left of Book Cover) */
 .book-info {
   display: flex;
   flex-direction: column;
@@ -93,7 +88,6 @@ nav ul li a:hover {
   padding-right: 20px;
 }
 
-/* Separator Line */
 .separator {
   width: 2px;
   background-color: #ccc;
@@ -101,7 +95,6 @@ nav ul li a:hover {
   margin: 0 10px;
 }
 
-/* Book Details */
 .book-info .details p {
   margin: 8px 0;
   font-size: 16px;
@@ -118,7 +111,6 @@ nav ul li a:hover {
   margin-left: 5px;
 }
 
-/* Selector Section (Right Side) */
 .selector-section {
   width: 250px;
   padding: 20px;
@@ -145,7 +137,6 @@ nav ul li a:hover {
   border: 1px solid #ccc;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
