@@ -1,12 +1,15 @@
 const themeSelector = document.querySelector('#theme');
+const container = document.querySelector(".container")
 
 function changeTheme() {
     if (themeSelector.value === 'dark') {
+        container.classList.add('dark');
         document.body.classList.add('dark');
-        document.querySelector('#logo').src = 'path/to/white-logo.png';
+        document.querySelector('img').src = 'byui-logo_dark.webp';
     } else {
+        container.classList.remove('dark');
         document.body.classList.remove('dark');
-        document.querySelector('#logo').src = 'path/to/blue-logo.png';
+        document.querySelector('img').src = 'byui-logo_blue.webp';
     }
 }
 
