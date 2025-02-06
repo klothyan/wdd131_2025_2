@@ -1,4 +1,7 @@
-const articles = [
+document.addEventListener("DOMContentLoaded", () => {
+  const bookSection = document.querySelector(".book-section");
+
+  const articles = [
     {
       id: 1,
       title: "Septimus Heap Book One: Magyk",
@@ -39,3 +42,22 @@ const articles = [
     }
   ];
   
+  bookSection.innerHTML = "";
+  articles.forEach(article => {
+    const bookContent = `
+      <h2>${article.title}</h2>
+      <div class="book-image">
+        <img src="${article.imgSrc}" alt="${article.imgAlt}" style="width:150px; height:auto;">
+      </div>
+      <p class="book-description">${article.description}</p>
+      <p><strong>Age Range:</strong> ${article.ages}</p>
+      <p><strong>Genre:</strong> ${article.genre}</p>
+      <div class="rating">
+        <span>Rating:</span>
+        <span class="star-rating">${article.stars}</span>
+      </div>
+      <hr>
+    `;
+    bookSection.innerHTML += bookContent;
+  });
+});
