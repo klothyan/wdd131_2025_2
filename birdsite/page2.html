@@ -9,61 +9,78 @@
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a><a href="page2.html">Birds</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html" aria-current="page">Birds</a></li>
+        </ul>
     </nav>
-    <div class="card">
-    
-    <h2>Common Birds of Rexburg</h2>
-    <div class="bird-gallery">
-        <div class="bird-card" onmouseover="playSound('robin')" onmouseout="stopSound('robin')">
-            <img src="American_Robin.jpg" alt="American Robin">
-            <p><strong>American Robin</strong> – A familiar songbird with a bright orange-red breast. Robins are known for their cheerful songs, often heard at dawn. They primarily feed on worms, insects, and berries.</p>
-            <audio id="robin" src="Robin.mp3"></audio>
+
+    <main>
+        <h1>Common Birds of Rexburg</h1>
+
+        <label for="searchBar" class="visually-hidden">Search for a bird</label>
+        <input type="text" id="searchBar" placeholder="Search birds..." aria-label="Search birds">
+        <button type="submit" id="searchButton">Search</button>
+        
+        <div class="bird-gallery">
+            <div class="bird-card" onmouseover="playSound('robin')" onmouseout="stopSound('robin')" tabindex="0" role="button">
+                <img src="American_Robin.jpg" alt="American Robin with an orange breast perched on a branch">
+                <p><strong>American Robin</strong> – A familiar songbird with a bright orange-red breast. Robins are known for their cheerful songs, often heard at dawn.</p>
+                <audio id="robin" src="Robin.mp3"></audio>
+            </div>
+
+            <div class="bird-card" onmouseover="playSound('goldfinch')" onmouseout="stopSound('goldfinch')" tabindex="0" role="button">
+                <img src="American_Goldfinch.jpg" alt="Bright yellow American Goldfinch perched on a branch">
+                <p><strong>American Goldfinch</strong> – A small, bright yellow bird often seen fluttering through open fields.</p>
+                <audio id="goldfinch" src="Goldfinch.mp3"></audio>
+            </div>
+
+            <div class="bird-card" onmouseover="playSound('chickadee')" onmouseout="stopSound('chickadee')" tabindex="0" role="button">
+                <img src="Black-Capped_Chickadee.jpg" alt="Black-Capped Chickadee with a black cap and white cheeks">
+                <p><strong>Black-Capped Chickadee</strong> – A tiny, curious bird with a black cap and bib. They are highly intelligent and can store food for later.</p>
+                <audio id="chickadee" src="Chickadee.mp3"></audio>
+            </div>
+
+            <div class="bird-card" onmouseover="playSound('blackbird')" onmouseout="stopSound('blackbird')" tabindex="0" role="button">
+                <img src="Red-Winged_Blackbird.webp" alt="Male Red-Winged Blackbird with red and yellow patches on wings">
+                <p><strong>Red-Winged Blackbird</strong> – Males have striking red and yellow shoulder patches. They are commonly found in wetlands.</p>
+                <audio id="blackbird" src="Blackbird.mp3"></audio>
+            </div>
+
+            <div class="bird-card" onmouseover="playSound('starling')" onmouseout="stopSound('starling')" tabindex="0" role="button">
+                <img src="European_Starling.jpg" alt="European Starling with iridescent feathers standing on a rock">
+                <p><strong>European Starling</strong> – Introduced from Europe, starlings are highly adaptable and can mimic human speech.</p>
+                <audio id="starling" src="Starling.mp3"></audio>
+            </div>
+
+            <div class="bird-card" onmouseover="playSound('sparrow')" onmouseout="stopSound('sparrow')" tabindex="0" role="button">
+                <img src="House_Sparrow.jpg" alt="Small brown House Sparrow on a branch">
+                <p><strong>House Sparrow</strong> – A small, social bird often found around human dwellings.</p>
+                <audio id="sparrow" src="Sparrow.mp3"></audio>
+            </div>
+
+            <div class="bird-card" onmouseover="playSound('dove')" onmouseout="stopSound('dove')" tabindex="0" role="button">
+                <img src="Mourning_Dove.jpg" alt="Soft gray Mourning Dove sitting on a tree branch">
+                <p><strong>Mourning Dove</strong> – Known for their soft, mournful cooing. They are graceful, fast flyers that often feed on the ground.</p>
+                <audio id="dove" src="Dove.mp3"></audio>
+            </div>
+
+            <div class="bird-card" onmouseover="playSound('finch')" onmouseout="stopSound('finch')" tabindex="0" role="button">
+                <img src="House_Finch.jpg" alt="House Finch with a reddish-orange head and chest">
+                <p><strong>House Finch</strong> – Males have a reddish-orange hue on their head and chest. They are known for their sweet, warbling songs.</p>
+                <audio id="finch" src="Finch.mp3"></audio>
+            </div>
+
+            <div class="bird-card" onmouseover="playSound('magpie')" onmouseout="stopSound('magpie')" tabindex="0" role="button">
+                <img src="Black-Billed_Magpie.avif" alt="Black-Billed Magpie with black and white plumage">
+                <p><strong>Black-Billed Magpie</strong> – Intelligent and social birds often seen in groups. They are part of the crow family.</p>
+                <audio id="magpie" src="Magpie.mp3"></audio>
+            </div>
         </div>
-        <div class="bird-card" onmouseover="playSound('goldfinch')" onmouseout="stopSound('goldfinch')">
-            <img src="American_Goldfinch.jpg" alt="American Goldfinch">
-            <p><strong>American Goldfinch</strong> – A small, bright yellow bird often seen fluttering through open fields. They have a distinctive, bouncy flight pattern and love to eat sunflower and thistle seeds.</p>
-            <audio id="goldfinch" src="Goldfinch.mp3"></audio>
-        </div>
-        <div class="bird-card" onmouseover="playSound('chickadee')" onmouseout="stopSound('chickadee')">
-            <img src="Black-Capped Chikadee.jpg" alt="Black-Capped Chickadee">
-            <p><strong>Black-Capped Chickadee</strong> – A tiny, curious bird with a black cap and bib. They are highly intelligent and can store food for later. Their "chick-a-dee-dee-dee" call is iconic.</p>
-            <audio id="chickadee" src="Chickadee.mp3"></audio>
-        </div>
-        <div class="bird-card" onmouseover="playSound('blackbird')" onmouseout="stopSound('blackbird')">
-            <img src="Red-Winged_Blackbird.webp" alt="Red-Winged Blackbird">
-            <p><strong>Red-Winged Blackbird</strong> – Males have striking red and yellow shoulder patches. They are commonly found in wetlands, where they make loud, melodic calls.</p>
-            <audio id="blackbird" src="Blackbird.mp3"></audio>
-        </div>
-        <div class="bird-card" onmouseover="playSound('starling')" onmouseout="stopSound('starling')">
-            <img src="European_Starling.jpg" alt="European Starling">
-            <p><strong>European Starling</strong> – Introduced from Europe, starlings are highly adaptable and can mimic human speech. Their glossy, iridescent feathers shimmer in the sunlight.</p>
-            <audio id="starling" src="Starling.mp3"></audio>
-        </div>
-        <div class="bird-card" onmouseover="playSound('sparrow')" onmouseout="stopSound('sparrow')">
-            <img src="House_Sparrow.jpg" alt="House Sparrow">
-            <p><strong>House Sparrow</strong> – A small, social bird often found around human dwellings. Originally from Europe, they have successfully adapted to cities and towns worldwide.</p>
-            <audio id="sparrow" src="Sparrow.mp3"></audio>
-        </div>
-        <div class="bird-card" onmouseover="playSound('dove')" onmouseout="stopSound('dove')">
-            <img src="Mourning_Dove.jpg" alt="Mourning Dove">
-            <p><strong>Mourning Dove</strong> – Known for their soft, mournful cooing. They are graceful, fast flyers that often feed on the ground in open fields.</p>
-            <audio id="dove" src="Dove.mp3"></audio>
-        </div>
-        <div class="bird-card" onmouseover="playSound('finch')" onmouseout="stopSound('finch')">
-            <img src="House_Finch.jpg" alt="House Finch">
-            <p><strong>House Finch</strong> – Males have a reddish-orange hue on their head and chest. They are known for their sweet, warbling songs.</p>
-            <audio id="finch" src="Finch.mp3"></audio>
-        </div>
-        <div class="bird-card" onmouseover="playSound('magpie')" onmouseout="stopSound('magpie')">
-            <img src="Black-Billed Magpie.avif" alt="Black-Billed Magpie">
-            <p><strong>Black-Billed Magpie</strong> – Intelligent and social birds often seen in groups. They are part of the crow family and can recognize themselves in mirrors.</p>
-            <audio id="magpie" src="Magpie.mp3"></audio>
-        </div>
-    </div>
-</main>
-<footer>
-    <p>&copy; 2025 BIRDSITE | All rights reserved.</p>
-</footer>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BIRDSITE | All rights reserved.</p>
+    </footer>
 </body>
 </html>
