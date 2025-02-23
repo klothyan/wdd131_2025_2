@@ -18,63 +18,62 @@ document.addEventListener("DOMContentLoaded", function() {
     displayBirds();
 });
 
-const birdData = [
+const birds = [
     {
         name: "American Robin",
-        image: "American_Robin.jpg",
-        description: "A familiar songbird with a bright orange-red breast. Robins are known for their cheerful songs, often heard at dawn. They primarily feed on worms, insects, and berries.",
-        audio: "Robin.mp3"
+        description: "A migratory songbird with a bright orange belly.",
+        image: "images/american_robin.jpg",
+        sound: "audio/american_robin.mp3"
     },
     {
         name: "American Goldfinch",
-        image: "American_Goldfinch.jpg",
-        description: "A small, bright yellow bird often seen fluttering through open fields. They have a distinctive, bouncy flight pattern and love to eat sunflower and thistle seeds.",
-        audio: "Goldfinch.mp3"
+        description: "A small yellow bird with black wings, commonly seen at feeders.",
+        image: "images/american_goldfinch.jpg",
+        sound: "audio/american_goldfinch.mp3"
     },
     {
         name: "Black-Capped Chickadee",
-        image: "Black-Capped_Chikadee.jpg",
-        description: "A tiny, curious bird with a black cap and bib. They are highly intelligent and can store food for later. Their 'chick-a-dee-dee-dee' call is iconic.",
-        audio: "Chickadee.mp3"
+        description: "A tiny bird known for its 'chick-a-dee' call.",
+        image: "images/black_capped_chickadee.jpg",
+        sound: "audio/black_capped_chickadee.mp3"
     },
     {
         name: "Red-Winged Blackbird",
-        image: "Red-Winged_Blackbird.webp",
-        description: "Males have striking red and yellow shoulder patches. They are commonly found in wetlands, where they make loud, melodic calls.",
-        audio: "Blackbird.mp3"
+        description: "A black bird with striking red and yellow shoulder patches.",
+        image: "images/red_winged_blackbird.jpg",
+        sound: "audio/red_winged_blackbird.mp3"
     },
     {
         name: "European Starling",
-        image: "European_Starling.jpg",
-        description: "Introduced from Europe, starlings are highly adaptable and can mimic human speech. Their glossy, iridescent feathers shimmer in the sunlight.",
-        audio: "Starling.mp3"
+        description: "A speckled black bird known for mimicking sounds.",
+        image: "images/european_starling.jpg",
+        sound: "audio/european_starling.mp3"
     },
     {
         name: "House Sparrow",
-        image: "House_Sparrow.jpg",
-        description: "A small, social bird often found around human dwellings. Originally from Europe, they have successfully adapted to cities and towns worldwide.",
-        audio: "Sparrow.mp3"
+        description: "A small brown bird commonly found in urban areas.",
+        image: "images/house_sparrow.jpg",
+        sound: "audio/house_sparrow.mp3"
     },
     {
         name: "Mourning Dove",
-        image: "Mourning_Dove.jpg",
-        description: "Known for their soft, mournful cooing. They are graceful, fast flyers that often feed on the ground in open fields.",
-        audio: "Dove.mp3"
+        description: "A gentle, gray-brown bird known for its mournful cooing.",
+        image: "images/mourning_dove.jpg",
+        sound: "audio/mourning_dove.mp3"
     },
     {
         name: "House Finch",
-        image: "House_Finch.jpg",
-        description: "Males have a reddish-orange hue on their head and chest. They are known for their sweet, warbling songs.",
-        audio: "Finch.mp3"
+        description: "A red-headed finch often seen at backyard feeders.",
+        image: "images/house_finch.jpg",
+        sound: "audio/house_finch.mp3"
     },
     {
         name: "Black-Billed Magpie",
-        image: "Black-Billed_Magpie.avif",
-        description: "Intelligent and social birds often seen in groups. They are part of the crow family and can recognize themselves in mirrors.",
-        audio: "Magpie.mp3"
+        description: "A striking black-and-white bird with a long tail.",
+        image: "images/black_billed_magpie.jpg",
+        sound: "audio/black_billed_magpie.mp3"
     }
 ];
-
 
 const birdNames = birds.map(bird => bird.name);
 
