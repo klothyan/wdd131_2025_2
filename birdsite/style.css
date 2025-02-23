@@ -5,7 +5,6 @@
     box-sizing: border-box;
   }
   
-  /* CSS Variables */
   :root {
     --primary-color: #5C6F68;
     --secondary-color: #95D9C3;
@@ -16,16 +15,14 @@
     --paragraph-font: "Sour Gummy", sans-serif;
   }
   
-  /* Body Styling */
   body {
     font-family: var(--paragraph-font);
-    background-color: var(--accent1-color); /* Light blue to mimic the sky */
+    background-color: var(--accent1-color);
     color: var(--primary-color);
     line-height: 1.6;
     padding: 20px;
   }
-  
-  /* Header Styling */
+ 
   header {
     background-color: var(--primary-color);
     color: white;
@@ -35,8 +32,7 @@
     margin-bottom: 20px;
     font-family: var(--heading-font);
   }
-  
-  /* Main Content Styling */
+
   main {
     max-width: 800px;
     margin: 0 auto;
@@ -46,7 +42,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  /* Heading Styling */
   h1, h2 {
     margin-bottom: 10px;
     font-family: var(--heading-font);
@@ -61,14 +56,12 @@
     font-size: 1.8em;
     color: var(--secondary-color);
   }
-  
-  /* Paragraph Styling */
+
   p {
     margin-bottom: 15px;
     color: var(--primary-color);
   }
-  
-  /* Link Styling */
+
   a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -78,16 +71,14 @@
   a:hover {
     text-decoration: underline;
   }
-  
-  /* Footer Styling */
+
   footer {
     text-align: center;
     margin-top: 20px;
     font-size: 0.9em;
     color: var(--primary-color);
   } 
-  
-  /* Responsive Design */
+
   @media (max-width: 600px) {
     body {
       padding: 10px;
@@ -105,8 +96,7 @@
       font-size: 1.5em;
     }
   } 
-  
-  /* Button Styling */
+
   button {
     background-color: var(--primary-color);
     color: white;
@@ -121,8 +111,7 @@
   button:hover {
     background-color: var(--secondary-color);
   }
-  
-  /* Bird Profile Card Styling */
+
   .card {
     background-color: var(--accent2-color);
     border: 1px solid var(--secondary-color);
@@ -146,8 +135,7 @@
   .card p {
     color: var(--primary-color);
   } 
-  
-  /* Navigation Bar Styling */
+
   nav {
     background-color: var(--primary-color);
     padding: 10px;
@@ -181,19 +169,19 @@
     background-repeat: repeat;
     background-position: center top;
     background-size: 200px auto;
-    opacity: 0.2; /* Adjust transparency level (0 = fully transparent, 1 = fully visible) */
-    pointer-events: none; /* Makes sure the logo doesn't interfere with clicks */
-    z-index: -1; /* Keeps the logo behind the content */
+    opacity: 0.2;
+    pointer-events: none;
+    z-index: -1;
   }
   
   body {
-    background-color: var(--accent1-color); /* Your background color */
+    background-color: var(--accent1-color);
   }
 
   .bird-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px; /* Increased gap between bird cards */
+    gap: 25px;
     margin-top: 20px;
 }
 
@@ -201,27 +189,27 @@
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 15px; /* Added padding for a better visual look */
+    padding: 15px;
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bird-card img {
   width: 100%;
   height: auto;
-  max-width: 220px; /* Increased size */
+  max-width: 220px;
   border-radius: 5px;
   display: block;
-  margin-bottom: 10px; /* Keeps spacing between image and text */
+  margin-bottom: 10px;
 }
 
 .bird-card p {
     margin: 0;
     font-size: 0.95em;
-    padding: 5px 10px; /* Balanced padding around text */
+    padding: 5px 10px;
 }
 
 
