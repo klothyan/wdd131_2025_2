@@ -98,3 +98,21 @@ window.onload = function() {
         }
     }
 };
+
+function playSound(birdId) {
+    let sound = document.getElementById(birdId);
+    if (sound) {
+        sound.currentTime = 0;
+        sound.play();
+    }
+}
+
+function stopSound(birdId) {
+    let sound = document.getElementById(birdId);
+    if (sound) {
+        sound.pause();
+        sound.currentTime = 0;
+    }
+}
+
+
